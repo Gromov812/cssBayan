@@ -1,0 +1,95 @@
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            margin: 10px 10px;
+        }
+        h1 {
+            margin : 15px
+        }
+        .label {
+            width: 100%;
+            padding: 0 15px;
+            font: 1em sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: lavender;
+            height: 30px;
+            transition: all 0.5s linear;
+        }
+
+        .item {
+            position: static;
+            width: 550px;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px rgb(255, 255, 255) solid;
+        }
+        .content {
+           overflow: hidden;
+           height: 0;
+           transition: all 0.5s linear;
+        }
+        .item > input:checked + label + .content {
+            display: block;
+            height: 350px;
+            transition: all 0.5s linear;
+        }
+        .content:hover {
+            display: block;
+            height: 350px;
+        }
+        .item input:checked + label > .arrow {
+           transform: rotate(45deg);
+        }
+        .item input:hover + label > .arrow {
+           transform: rotate(45deg);
+        }
+        .item > label:hover + .content {
+            display: block;
+            height: 350px;
+            transition: all 0.5s linear;
+        }
+        .item > label:hover > span {
+            transform: rotate(45deg);
+            transition: all 0.3s linear;
+        }
+        .box {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex {
+            display: flex;
+        }
+        .arrow {
+            display: none;
+        }
+        .container:hover > .item > input + label > .arrow {
+           display: block;
+        }
+
+        input {
+            display: none;
+        }
+        .img {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        img {
+            height: 100%;
+        }
+        @media (max-width: 600px) {
+            .item {
+                width: 90vw;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
