@@ -19,15 +19,20 @@
             align-items: center;
             background: lavender;
             height: 30px;
-            transition: all 0.5s linear;
+            transition: all 0.1s linear;
         }
-
         .item {
             position: static;
             width: 550px;
             display: flex;
             flex-direction: column;
             border-bottom: 1px rgb(255, 255, 255) solid;
+        }
+        .item:active {
+            border: 1px lavender solid;
+        }
+        .item:active > .label {
+            background: rgb(210, 210, 255);
         }
         .content {
            overflow: hidden;
