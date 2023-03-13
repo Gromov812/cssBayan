@@ -93,6 +93,7 @@
         }
         img {
             height: 100%;
+            transition: all 0.2s linear;
         }
         @media (max-width: 600px) {
             .item {
