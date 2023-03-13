@@ -34,6 +34,10 @@
         .item:active > .label {
             background: rgb(210, 210, 255);
         }
+        .item:active > .content > .img > img {
+            transform: scale(0.98);
+            transition: all 0.2s linear;
+        }
         .content {
            overflow: hidden;
            height: 0;
