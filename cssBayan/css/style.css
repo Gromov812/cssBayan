@@ -79,7 +79,7 @@
         .arrow {
             display: none;
         }
-        .container:hover > .item > input + label > .arrow {
+        .container:hover .item > .label > .arrow {
            display: block;
         }
 
